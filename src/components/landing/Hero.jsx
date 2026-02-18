@@ -162,9 +162,9 @@ export default function Hero() {
             <button onClick={() => navigate('/bigscreen')} className="px-8 py-3 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:shadow-xl hover:shadow-purple-500/30 transition-all">
               数据大屏
             </button>
-            <a href="#modules" className="px-8 py-3 rounded-xl border border-white/30 text-white font-semibold hover:bg-white/10 transition-all">
+            <button onClick={() => document.getElementById('modules')?.scrollIntoView({ behavior: 'smooth' })} className="px-8 py-3 rounded-xl border border-white/30 text-white font-semibold hover:bg-white/10 transition-all">
               了解更多
-            </a>
+            </button>
           </motion.div>
         </motion.div>
       </div>
